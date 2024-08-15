@@ -6,6 +6,7 @@ import HeroSection from "./Compenents/HeroSection"
 import Projects from "./Compenents/Projects"
 import Technologies from "./Compenents/Technologies"
 import Nav from "./Compenents/Nav"
+import Body from "./Compenents/Body"
 
 
 function App() {
@@ -35,21 +36,11 @@ function App() {
       <div className="hidden lg:block">
         {
           menu ? <Nav isDark={isDark} menu={menu}/> :
-            <>
-              <HeroSection isDark={isDark} />
-              <AboutMe isDark={isDark} />
-              <Technologies isDark={isDark} />
-              <Projects isDark={isDark} />
-              <Contact isDark={isDark} />
-            </>
+            <Body />
         }
       </div>
       <div className="block lg:hidden">
-        <HeroSection isDark={isDark} />
-        <AboutMe isDark={isDark} />
-        <Technologies isDark={isDark} />
-        <Projects isDark={isDark} />
-        <Contact isDark={isDark} />
+        <Body isDark={isDark} />
       </div>
 
     </>

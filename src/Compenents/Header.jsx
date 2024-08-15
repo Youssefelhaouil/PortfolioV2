@@ -11,7 +11,7 @@ import Nav from "./Nav";
 function Header({ isDark, setIsDark, menu, setMenu }) {
 
   return (
-    <header className='px-[60px] md:px-[30px] pt-4 flex justify-between items-center h-[100px] '>
+    <header className='px-[60px] md:px-[30px] pt-4 flex justify-between items-center h-[100px] shadow '>
 
       <h1 className={`cursor-pointer font-bold font-sans text-3xl  ${isDark ? "text-white hover:text-gray-100" : "text-black hover:text-gray-900"} first-letter:text-indigo-500 `}>
         You<span className="first-letter:text-indigo-500">
